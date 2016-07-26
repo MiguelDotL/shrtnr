@@ -1,0 +1,2 @@
+class Nurl < ApplicationRecord
+end

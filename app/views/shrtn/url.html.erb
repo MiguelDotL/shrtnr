@@ -1,0 +1,8 @@
+<h1>Shrtn ur URL</h1>
+
+<%= form_tag shrtn_url_path do %>
+  <%= search_field_tag :url %>
+  <%= submit_tag ".shrtn" %>
+<% end %>
+
+<p><%=link_to "this.domain/#{@actual.id}", "/#{@actual.id}" %></p>
