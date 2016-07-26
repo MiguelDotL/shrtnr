@@ -2,15 +2,14 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
+
+development:
+  <<: *default
   database: shrtnr
 
-# development:
-#   <<: *default
-#   database: shrtnr
-#
-# test:
-#   <<: *default
-#   database: shrtnr-test
+test:
+  <<: *default
+  database: shrtnr-test
 
 
 
